@@ -1,0 +1,81 @@
+/* Style for the body of the page */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the header of the page */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style for the container of the page */
+.container {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* Style for the table of packets */
+table {
+  border-collapse: collapse;
+  margin: 20px 0;
+  width: 100%;
+}
+
+/* Style for the headers of the table */
+th {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Style for the rows of the table */
+tr {
+  border-bottom: 1px solid #ccc;
+}
+
+/* Style for the cells of the table */
+td {
+  padding: 10px;
+}
+
+/* Style for the alert message */
+.alert {
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+  color: #a94442;
+  margin: 20px 0;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Style for the success message */
+.success {
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  color: #3c763d;
+  margin: 20px 0;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Style for the button */
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 0;
+  cursor: pointer;
+}

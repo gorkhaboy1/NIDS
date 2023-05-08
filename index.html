@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Network Intrusion Detection System</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+	<h1>Network Intrusion Detection System</h1>
+	<div>
+		<h2>Real-time Network Traffic Analysis</h2>
+		<div id="live-graph"></div>
+	</div>
+	<script>
+		var data = [];
+		var layout = {
+			title: "Network Traffic Analysis",
+			xaxis: {title: "Time"},
+			yaxis: {title: "Packet Size"}
+		};
+		Plotly.newPlot('live-graph', data, layout);
+		var updateInterval = 1000;
+		var interval = setInterval(function() {
+			Plotly.extendTraces('live-graph', {y: [[{{packet_size}}]], x: [[{{timestamp}}]]}, [0]);
+			var update = {
+				xaxis: {
+					range: [new Date().getTime() - 30000, new Date().getTime()]
+				}
+			};
+			Plotly.update('live-graph', update);
+		}, updateInterval);
+	</script>
+</body>
+</html>
